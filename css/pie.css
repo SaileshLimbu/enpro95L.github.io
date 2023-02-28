@@ -3,6 +3,10 @@
     font-size: 11px;
     font-family: Georgia, Garamond, serif;
 }
+body{
+    background-image: url('../images/silverware.jpg');
+    background-repeat: repeat;
+}
 
 h1{
     color: #A4A400;
@@ -22,6 +26,9 @@ h2{
 }
 a{
     color: #A4A400;
+}
+ul{
+    list-style-image: url('../images/pie_icon.gif');
 }
 .quotations{
     width: 100%;

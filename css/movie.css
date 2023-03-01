@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Tahoma, sans-serif;
+}
+body{
+    background-image: url("../images/background.png");
+}
+#header{
+    background-image: url("../images/bannerbg.png");
+    margin-bottom: 10px;
+}
+#header img{
+    display: block;
+    margin: auto;
+}
+h2{
+    font-size: 22px;
+    font-weight: bold;
+    font-family: Tahoma, Verdana, sans-serif;
+    text-shadow: 3px 3px #999999;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#content{
+    width: 800px;
+    margin: auto;
+    border: 4px solid gray;
+    border-radius: 20px;
+    display: flex;
+}
+#content-left{
+    width: 550px;
+    position: relative;
+}
+#content-right{
+    width: 250px;
+}
+#rotten-banner{
+    background-image: url("../images/rbg.png");
+    border-radius: 16px 0 0 0;
+    height: 83px;
+}
+#rotten-banner img{
+    border-radius: 16px 0 0 0;
+    float: left;
+    height: 83px;
+}
+#rotten-banner h1{
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    margin-top: 12px;
+    float: left;
+}
+
+#content-right{
+    background-color: #A2B964;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 16px;
+    padding-bottom: 20px;
+}
+
+#content-right img{
+    border-radius: 0 16px 0 0;
+    display: inline;
+}
+#box-left{
+    width: 47%;
+    float: left;
+    margin: 1.5%;
+}
+#box-right{
+    width: 47%;
+    float: left;
+    margin: 1.5%;
+}
+.box{
+    margin-bottom: 20pt;
+}
+.innerbox{
+    background-color: #E8DC9B;
+    border-radius: 10px;
+    border: 2px solid gray;
+    padding: 8px;
+    font-size: 8pt;
+    font-weight: bold;
+}
+.box img{
+    margin-right: 5px;
+}
+.box .critic-box{
+    margin-top: 10pt;
+    font-size: 8pt;
+}
+.box .critic-box img{
+    float: left;
+}
+dl{
+    font-size: 8pt;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+dt{
+    font-weight: bold;
+    margin-top: 10pt;
+}
+dd{
+    margin-left: 30px;
+}
+dd a{
+    display: block;
+}
+#footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #A2B964;
+    text-align: center;
+    padding-right: 50px;
+    font-size: 10pt;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom-left-radius: 16px;
+}
+#validator{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

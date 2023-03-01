@@ -1,11 +1,10 @@
 *{
     color: #404040;
-    font-size: 11px;
-    font-family: Georgia, Garamond, serif;
 }
 body{
     background-image: url('../images/silverware.jpg');
-    background-repeat: repeat;
+    font-size: 11px;
+    font-family: Georgia, Garamond, serif;
 }
 
 h1{
@@ -38,4 +37,10 @@ ul{
 #footer{
     float: right;
     margin-top: 10px;
+}
+.bold{
+    font-weight: bold;
+}
+.strike{
+    text-decoration: line-through;
 }

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/grades.css">
+    <title>Retrieve Grade</title>
+</head>
+
+<body>
+    <form action="https://mumstudents.org/params.php" method="GET">
+        <h1>Retrieve your grade</h1>
+        <p>
+            <label for="student_name">Name</label>
+            <input type="text" name="student_name" required>
+        </p>
+
+        <p>
+            <label for="student_id">Student ID</label>
+            <input type="text" name="student_id" required>
+        </p>
+
+        <p>
+            <label for="assignment">Assignment</label>
+            <select name="assignment">
+                <option value="Assignment One">Assignment One</option>
+                <option value="Assignment Two">Assignment Two</option>
+                <option value="Assignment Three">Assignment Three</option>
+                <option value="Assignment Four">Assignment Four</option>
+                <option value="Assignment Five">Assignment Five</option>
+            </select>
+        </p>
+        <p>
+            <label for="entry">Student Entry</label><br>
+            <input type="radio" name="cc" value="Aug 2022" /> <span class="entry">Aug 2022</span>
+            <input type="radio" name="cc" value="Oct 2022" checked="checked" /> <span class="entry">Oct 2022</span>
+            <input type="radio" name="cc" value="Feb 2023" /> <span class="entry">Feb 2023</span>
+        </p>
+        <p>
+            <input type="checkbox" name="aggrement"> I agree to Terms and Conditions.
+        </p>
+
+        <input type="submit" value="Get Grade">
+        </div>
+    </form>
+</body>
+
+</html>

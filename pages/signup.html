@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/signup.css">
+    <title>Sign Up</title>
+</head>
+
+<body>
+    <form action="https://mumstudents.org/params.php" method="GET">
+        <h1>Sign Up</h1>
+        <p>
+            <label for="student_name">Name</label>
+            <input type="text" name="student_name" maxlength="16" required>
+        </p>
+        <p>
+            <label for="gender">Gender</label>
+            <input type="radio" name="cc" value="Male" /> <span class="entry">Male</span>
+            <input type="radio" name="cc" value="Female" checked="checked" /> <span class="entry">Female</span>
+        </p>
+
+        <p>
+            <label for="age">Age</label>
+            <input type="text" name="age" maxlength="2" class="short-input" required>
+        </p>
+
+        <p>
+            <label for="type">Personality Type</label>
+            <input type="text" name="type" maxlength="6" required class="short-input"> <a
+                href="http://www.humanmetrics.com/cgi-win/JTyptes2.asp">Don't know your type?</a>
+        </p>
+
+        <p>
+            <label for="os">Favourite OS</label>
+            <select name="os">
+                <option value="win" selected>Windows</option>
+                <option value="mac">Mac OS X</option>
+                <option value="linux">Linux</option>
+            </select>
+        </p>
+
+        <p>
+            <label for="seeking-age">Seeking Age</label>
+            <input type="text" name="seeking-age-from" placeholder="From" maxlength="2" class="short-input" required>
+            to
+            <input type="text" name="seeking-age-to" placeholder="To" maxlength="2" class="short-input" required>
+        </p>
+
+        <input type="submit" value="Sign Up">
+        </div>
+    </form>
+</body>
+
+</html>

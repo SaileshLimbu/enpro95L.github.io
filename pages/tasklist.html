@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/tasklist.css" type="text/css">
+    <title>Task List</title>
+    <script type="text/javascript">
+        function addTask(){
+            var task = document.getElementById("task").value;
+            if(task == ""){
+                alert("Task is empty");
+                return;
+            }
+            var taskList = localStorage.getItem("task");
+            console.log(taskList);
+            taskList = taskList == null ? task : taskList + "," + task;
+            localStorage.setItem("task", taskList);
+            showTaskList();
+        }
+        function clearTask(){
+            localStorage.removeItem("task");
+            document.getElementById("tasklist").value = "";
+        }
+        function showTaskList(){
+            var taskList = localStorage.getItem("task");
+            document.getElementById("tasklist").value = taskList.split(",").join("\n");
+        }
+        window.onload = function(){
+            showTaskList();
+        }
+
+        //split and break line from a string in javascript?
+    </script>
+</head>
+
+<body>
+    <div id="container">
+        <h2>Task List</h2>
+        <div id="container-left">
+            <p><label for="text">Task</label></p>
+            <input type="text" id="task"><br>
+            <input type="button" onclick="addTask()" value="Add Task"><br>
+            <input type="button" onclick="clearTask()" value="Clear Task">
+        </div>
+        <div id="container-right">
+            <p>Task List</p>
+            <textarea name="list" id="tasklist" cols="30" rows="10"></textarea>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,37 @@
+1. What is the difference between the following 2 statements?
+setTimeout(booyah, 2000);
+setTimeout(booyah(), 2000);
+
+Answer: The first statement, setTimeout(booyah, 2000);, will execute the booyah function after a delay of 2000 milliseconds (2 seconds). The second statement, setTimeout(booyah(), 2000);, will execute the booyah function immediately and pass its return value (if any) to setTimeout. Therefore, the second statement will not delay the execution of booyah, but will instead execute it immediately and delay the execution of the value it returns.
+
+2.What do the following 2 alerts display (answer without running the code)?
+var myfunc = function(a, x) {
+ return a * x;
+};
+var x = myfunc(2, 3);
+var y = myfunc;
+alert(x);
+alert(y(2,3)); 
+
+Answer: The first alert statement will display the value 6, which is the result of calling myfunc with arguments 2 and 3. The second alert statement will also display the value 6, which is the result of calling the y function with arguments 2 and 3. Since y is assigned to myfunc, it is a reference to the same function and can be called in the same way.
+
+3.Write functions booyah1 and booyah2 so that in both cases below, an alert box comes up after 2 seconds that
+says “BOOYAH!”
+setTimeout(booyah1, 2000);
+setTimeout(booyah2(), 2000);
+
+Answer: Here are two possible implementations of booyah1 and booyah2:
+function booyah1() {
+  alert("BOOYAH!");
+}
+
+function booyah2() {
+  return function() {
+    alert("BOOYAH!");
+  }
+}
+
+4. What is "Unobtrusive Javascript"? What is the practical application of Unobtrusive Javascript (and the reasons
+for using it)?
+
+Answer: Unobtrusive JavaScript is a design technique in which JavaScript is used to improve a web page's functionality without being excessive. As a result, if a user disables JavaScript, the web page will still operate, but with fewer features. Unobtrusive JavaScript has the practical benefit of increasing accessibility because it allows users who do not have JavaScript enabled (for example, owing to a disability or slow network link) to still use the page's essential features. JavaScript code is kept apart from HTML markup and CSS styling, making the web page simpler to maintain and update.
